@@ -1,33 +1,38 @@
 import styles from './header.module.css';
 
 export const Header = () => (
-  <header className={styles.head}>
-    <div className={styles.avatar}>
-      <div className={styles.avatarFrame}>
-        <img src="./avatar-frame.png" alt="avatar frame" />
-      </div>
-      <div className={styles.avatarContainer}>
-        <img src="./avatar.jpg" alt="avatar" />
-      </div>
-    </div>
+  <section className={styles.header}>
     <div className={styles.info}>
-      <div className={styles.name}>
-        <h3>Vadim Bezymyannyi</h3>
-        <p>
-          I&apos;m 29 years old. Have C&I Engineer degree.
-          Calm person, have good communication skills, can work easily in a team.
-          I appreciate honesty and kindness in people.
-          Interested in science-tech, astronomy, game-dev and extreme spots.
-          Ready to learn new things and improve my skills.
-        </p>
+      <div className={styles.avatar}>
+        <div className={styles.avatarFrame}>
+          <img src="img/avatar-frame.png" alt="avatar frame" />
+        </div>
+        <div className={styles.avatarContainer}>
+          <img src="img/avatar.jpg" alt="avatar" />
+        </div>
       </div>
-      <div className={styles.skills}>
-        <h3>Frontend developer</h3>
+      <div className={styles.name}>
+        <h2>Vadim Bezymyannyi</h2>
         <p>
-          JavaScript/TypeScript, HTML, CSS, React.js, Git,
-          Next.js, Jest, Redux, AWS, Ant Design, Figma
+          29 years old. Have C&I Engineer degree. 1 year of commercial experience.
+          Calm person with good communication skills, team player. Appreciate honesty and
+          kindness in people. Interested in science-tech, astronomy, game-dev and extreme spots.
         </p>
+        <h4>Work experience</h4>
+        <p>RedPillStudio. Frontend developer (Aug 2022 - Present)</p>
+        <p>EPAM Systems. Junior Software Engineer (Feb 2022 - Jun 2022)</p>
       </div>
     </div>
-  </header>
+    <div className={styles.profession}>
+      <h2>Frontend developer</h2>
+      <h4>Tech Stack</h4>
+      <p className={styles.skills}>
+        HTML, CSS, JavaScript/TypeScript, React.js, Next.js,
+        CSS-in-JS (Emotion), Jest, Redux, Git, AWS, Ant Design, Figma
+      </p>
+      <h4>Language skills</h4>
+      <p>Russian: Native</p>
+      <p>English: Intermediate (B1)</p>
+    </div>
+  </section>
 );

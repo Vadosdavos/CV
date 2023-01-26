@@ -1,3 +1,55 @@
 .mainContainer {
   display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius);
+  max-width: 1200px;
+}
+
+.worksContainer {
+  display: flex;
+  gap: 20px;
+  padding-left: 5px;
+}
+
+.worksPreview, .works {
+  border-radius: var(--radius);
+}
+
+.worksPreview {
+  width: 65%;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 20px;
+}
+
+.worksPreview img {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius);
+}
+
+.workDescription {
+  margin-top: 10px;
+}
+
+.works {
+  width: 35%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.worksList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.worksList li {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0;
+  margin-bottom: 10px;
 }
