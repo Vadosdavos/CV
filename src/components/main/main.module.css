@@ -21,11 +21,15 @@
 .worksPreview {
   width: 65%;
   background-color: rgba(0, 0, 0, 0.2);
-  margin: 0;
   padding: 20px;
 }
 
-.worksPreview img {
+.work {
+  margin: 0;
+  width: 100%;
+}
+
+.workImage {
   width: 100%;
   display: block;
   border-radius: var(--radius);
@@ -35,7 +39,8 @@
   margin-top: 10px;
 }
 
-.works {
+.worksTitles {
+  border-radius: var(--radius);
   width: 35%;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.2);
@@ -47,7 +52,7 @@
   padding: 0;
 }
 
-.worksList li {
+.worksListItem {
   cursor: pointer;
   font-weight: 600;
   padding: 0;
