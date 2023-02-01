@@ -15,12 +15,12 @@ export const Header = () => (
         <h2>Vadim Bezymyannyi</h2>
         <p>
           29 years old. Have C&I Engineer degree. 1 year of commercial experience.
-          Calm person with good communication skills, team player. Appreciate honesty and
-          kindness in people. Interested in science-tech, astronomy, game-dev and extreme spots.
         </p>
-        <h4>Work experience</h4>
-        <p>RedPillStudio. Frontend developer (Aug 2022 - Present)</p>
-        <p>EPAM Systems. Junior Software Engineer (Feb 2022 - Jun 2022)</p>
+        <p>
+          Calm person with good communication skills, team player. Appreciate honesty and
+          kindness in people.
+        </p>
+        <p>Interested in science-tech, astronomy, game-dev and extreme spots.</p>
       </div>
     </div>
     <div className={styles.profession}>

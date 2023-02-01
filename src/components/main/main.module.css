@@ -1,6 +1,7 @@
 .mainContainer {
   display: flex;
   flex-direction: column;
+  gap: 20px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
@@ -44,17 +45,25 @@
   width: 35%;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.worksTitles a {
+  font-weight: 600;
 }
 
 .worksList {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-top: 10px;
 }
 
 .worksListItem {
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 500;
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }

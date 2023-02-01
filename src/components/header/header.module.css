@@ -3,12 +3,12 @@
   justify-content: space-between;
   gap: 20px;
   border-radius: var(--radius);
-  margin-bottom: 20px;
 }
 
 .info {
   display: flex;
   width: 65%;
+  min-width: 65%;
 }
 
 .avatar {
@@ -42,12 +42,11 @@
   padding: 10px;
 }
 
-.name p {
-  font-size: 14px;
-}
-
 .profession {
   width: 35%;
+  border-radius: var(--radius);
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .skills {

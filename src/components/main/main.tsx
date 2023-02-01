@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Header } from '../header/header';
 import styles from './main.module.css';
 import 'swiper/css';
+import { Footer } from '../footer/footer';
 
 type DataValue = {
   img: string;
@@ -87,10 +88,29 @@ export const Main = () => {
           </Swiper>
         </div>
         <div className={styles.worksTitles}>
-          <h3>Works</h3>
-          <ul className={`${styles.worksList} swiper-pagination`} />
+          <div>
+            <h3>Works</h3>
+            <ul className={`${styles.worksList} swiper-pagination`} />
+          </div>
+          <div>
+            <h3>Work experience</h3>
+            <p>Aug 2022 - Present</p>
+            <p>
+              <a href="https://redpilldev.tech/" target="_blank" rel="noreferrer">RedPillStudio.</a>
+              {' '}
+              Frontend developer
+            </p>
+            <br />
+            <p>Feb 2022 - Jun 2022</p>
+            <p>
+              <a href="https://www.epam.com/" target="_blank" rel="noreferrer">EPAM Systems.</a>
+              {' '}
+              Junior Software Engineer
+            </p>
+          </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 };
