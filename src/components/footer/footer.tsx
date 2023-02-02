@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import styles from './footer.module.css';
+import sprite from '../../assets/icons/sprite.svg';
 
 export const Footer = () => {
   const socials = [
@@ -10,7 +11,7 @@ export const Footer = () => {
     { text: 'instagram', link: 'https://www.instagram.com/vadosbezimeni' }] as const;
   return (
     <section className={styles.footer}>
-      <div>
+      <div className={styles.copyright}>
         ©2023
         {' '}
         <a href="mailto:bezbvap@gmail.com">bezbvap@gmail.com</a>
@@ -22,8 +23,11 @@ export const Footer = () => {
             key={el.text}
             href={el.link}
             className={styles.socialLink}
-            style={{ backgroundImage: `url(img/icons/${el.text}.svg` }}
-          />
+          >
+            <svg className={styles.socialImg}>
+              <use xlinkHref={`${sprite}#${el.text}`} />
+            </svg>
+          </a>
         ))}
       </div>
     </section>

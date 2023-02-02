@@ -66,4 +66,9 @@
   font-weight: 500;
   padding: 0;
   margin-bottom: 15px;
+  transition: color 0.5s, transform 0.5s;
+}
+.worksListItem:hover {
+  color: white;
+  transform: translateX(5px);
 }

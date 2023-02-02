@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+.copyright {
+  font-size: 14px;
+}
+
 .divider {
 height: 0.5px;
 width: 50%;
@@ -21,7 +25,17 @@ background-color: #CACACA;
 .socialLink {
   width: 30px;
   height: 30px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+}
+
+.socialImg {
+  display: block;
+  width: 30px;
+  height: 30px;
+  fill: #cacaca;
+  transition: fill 0.5s, transform 0.5s;
+}
+
+.socialLink:hover .socialImg {
+  transform: translateY(-5px);
+  fill: white;
 }
