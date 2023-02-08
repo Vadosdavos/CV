@@ -21,7 +21,17 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: radial-gradient(rgb(213, 17, 57), blue)
+  background: black;
+  position: relative;
+  overflow: hidden;
+  /* background: radial-gradient(rgb(213, 17, 57), blue) */
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #000;
 }
 
 h2, h3 {

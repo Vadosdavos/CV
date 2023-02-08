@@ -1,8 +1,12 @@
+import { Background } from './components/background/background';
 import { Main } from './components/main/main';
 
 function App() {
   return (
-    <Main />
+    <>
+      <Background />
+      <Main />
+    </>
   );
 }
 
