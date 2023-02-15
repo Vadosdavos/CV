@@ -5,6 +5,14 @@ export const Background = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   const makeStars = () => {
+    const getDocumentSize = () => [document.documentElement.clientWidth, Math.max(
+      document.body.scrollHeight,
+      document.documentElement.scrollHeight,
+      document.body.offsetHeight,
+      document.documentElement.offsetHeight,
+      document.body.clientHeight,
+      document.documentElement.clientHeight,
+    )];
     const canvas = canvasRef.current;
     if (!canvas) {
       return;
@@ -13,8 +21,11 @@ export const Background = () => {
     if (!canvasContext) {
       return;
     }
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+
+    const [width, height] = getDocumentSize();
+
+    canvas.width = width;
+    canvas.height = height;
 
     const nStars = 150;
     const colors = ['#176ab6', '#fb9b39', '#ffffff', '#994646', '0f7a05'];
@@ -51,10 +62,17 @@ export const Background = () => {
     animate();
 
     window.addEventListener('resize', () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+      const [resizeWidth, resizeHeight] = getDocumentSize();
+      canvas.width = resizeWidth;
+      canvas.height = resizeHeight;
       stars = [];
       init();
+    });
+
+    window.addEventListener('scroll', () => {
+      const [scrollWidth, scrollHeight] = getDocumentSize();
+      canvas.width = scrollWidth;
+      canvas.height = scrollHeight;
     });
   };
 

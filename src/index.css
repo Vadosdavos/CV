@@ -7,24 +7,23 @@
 }
 
 body {
+  padding: 0;
   margin: 0;
-  padding: 10px;
   font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', sans-serif;
-  font-size: 16px;
   line-height: 18px;
   color: #CACACA;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   background: black;
   position: relative;
   overflow: hidden;
-  /* background: radial-gradient(rgb(213, 17, 57), blue) */
+}
+
+#root {
+  min-height: 100%;
+  box-sizing: border-box;
+  display: flex;
 }
 
 canvas {
@@ -37,6 +36,7 @@ canvas {
 h2, h3 {
   color: white;
   margin: 0 0 10px 0;
+  line-height: 20px;
 }
 
 h4 {
@@ -55,4 +55,19 @@ a {
 
 a:hover {
   color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    overflow: visible;
+  }
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
 }

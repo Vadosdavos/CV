@@ -1,3 +1,14 @@
+.mainLayout {
+  min-height: 100vh;
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .mainContainer {
   display: flex;
   flex-direction: column;
@@ -7,6 +18,7 @@
   backdrop-filter: blur(5px);
   border-radius: var(--radius);
   max-width: 1200px;
+  width: 100%;
 }
 
 .worksContainer {
@@ -58,7 +70,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-top: 10px;
 }
 
 .worksListItem {
@@ -68,7 +79,41 @@
   margin-bottom: 15px;
   transition: color 0.5s, transform 0.5s;
 }
+
 .worksListItem:hover {
   color: white;
   transform: translateX(5px);
+}
+
+@media screen and (max-width: 1200px) {
+  .worksContainer {
+    flex-wrap: wrap-reverse;
+  }
+
+  .worksPreview, .worksTitles {
+    width: 100%;
+  }
+
+  .worksTitles {
+    flex-direction: row;
+    gap: 10px
+  }
+
+  .worksListItem {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .mainLayout {
+    padding: 0;
+  }
+
+  .worksContainer, .mainContainer {
+    gap: 10px;
+  }
+
+  .mainContainer {
+    border-radius: 0px;
+  }
 }

@@ -52,3 +52,38 @@
 .skills {
   line-height: 20px;
 }
+
+@media screen and (max-width: 1200px) {
+  .avatar {
+    display: none;
+  }
+
+  .info {
+    width: 50%;
+    min-width: 50%;
+  }
+
+  .name {
+    padding: 20px;
+  }
+
+  .profession {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .info {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .profession {
+    width: 100%;
+  }
+ }

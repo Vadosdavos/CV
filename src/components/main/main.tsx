@@ -15,9 +15,9 @@ type Data = Record<string, DataValue>;
 
 export const Main = () => {
   const data: Data = {
-    'Chimeras Metaverse': {
+    'Chimeras Metaverse game.  Marketplace': {
       img: 'img/works/chimeras.jpg',
-      description: 'Chimeras Metaverse.  Marketplace',
+      description: 'I took part in marketplace and user profile features development. Sortable and filterable marketplace allows users to buy some game assets. User can control login methods and dispose of game assets. Used technologies: NextJS, TypeScript, CSS-in-JS (Emotion), ESLint, JSON Schema, Metamask',
       link: 'https://marketplace.chimeras.io/',
     },
     'Skateboard 3d configurator': {
@@ -56,61 +56,64 @@ export const Main = () => {
   const workTitiles = Object.keys(data);
 
   return (
-    <main className={styles.mainContainer}>
-      <Header />
-      <section className={styles.worksContainer}>
-        <div className={styles.worksPreview}>
-          <Swiper
-            allowTouchMove={false}
-            pagination={{
-              clickable: true,
-              el: '.swiper-pagination',
-              renderBullet: (index, className) => `<li class="${`${styles.worksListItem} ${className}`}">${workTitiles[index]}</li>`,
-            }}
-            modules={[Pagination]}
-          >
-            {workTitiles.map((el) => (
-              <SwiperSlide key={data[el].img}>
-                <figure className={styles.work}>
-                  <a href={data[el].link} target="_blank" rel="noreferrer">
-                    <img
-                      className={styles.workImage}
-                      src={data[el].img}
-                      alt={el}
-                    />
-                  </a>
-                  <figcaption className={styles.workDescription}>
-                    {data[el].description}
-                  </figcaption>
-                </figure>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-        <div className={styles.worksTitles}>
-          <div>
-            <h3>Works</h3>
-            <ul className={`${styles.worksList} swiper-pagination`} />
+    <main className={styles.mainLayout}>
+      <div className={styles.mainContainer}>
+        <Header />
+        <section className={styles.worksContainer}>
+          <div className={styles.worksPreview}>
+            <Swiper
+              allowTouchMove={false}
+              pagination={{
+                clickable: true,
+                el: '.swiper-pagination',
+                renderBullet: (index, className) => `<li class="${`${styles.worksListItem} ${className}`}">${workTitiles[index]}</li>`,
+              }}
+              modules={[Pagination]}
+            >
+              {workTitiles.map((el) => (
+                <SwiperSlide key={data[el].img}>
+                  <figure className={styles.work}>
+                    <a href={data[el].link} target="_blank" rel="noreferrer">
+                      <img
+                        className={styles.workImage}
+                        src={data[el].img}
+                        alt={el}
+                      />
+                    </a>
+                    <figcaption className={styles.workDescription}>
+                      {data[el].description}
+                    </figcaption>
+                  </figure>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
-          <div>
-            <h3>Work experience</h3>
-            <p>Aug 2022 - Present</p>
-            <p>
-              <a href="https://redpilldev.tech/" target="_blank" rel="noreferrer">RedPillStudio.</a>
-              {' '}
-              Frontend developer
-            </p>
-            <br />
-            <p>Feb 2022 - Jun 2022</p>
-            <p>
-              <a href="https://www.epam.com/" target="_blank" rel="noreferrer">EPAM Systems.</a>
-              {' '}
-              Junior Software Engineer
-            </p>
+          <div className={styles.worksTitles}>
+            <div>
+              <h3>Works</h3>
+              <ul className={`${styles.worksList} swiper-pagination`} />
+            </div>
+            <div>
+              <h3>Work experience</h3>
+              <p>Aug 2022 - Present</p>
+              <p>
+                <a href="https://redpilldev.tech/" target="_blank" rel="noreferrer">RedPillStudio.</a>
+                {' '}
+                Frontend developer
+              </p>
+              <br />
+              <p>Feb 2022 - Jun 2022</p>
+              <p>
+                <a href="https://www.epam.com/" target="_blank" rel="noreferrer">EPAM Systems.</a>
+                {' '}
+                Junior Software Engineer
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
-      <Footer />
+        </section>
+        <Footer />
+      </div>
     </main>
+
   );
 };

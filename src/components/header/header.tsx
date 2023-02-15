@@ -28,7 +28,7 @@ export const Header = () => (
       <h4>Tech Stack</h4>
       <p className={styles.skills}>
         HTML, CSS, JavaScript/TypeScript, React.js, Next.js,
-        CSS-in-JS (Emotion), Jest, Redux, Git, AWS, Ant Design, Figma
+        CSS-in-JS (Emotion), MongoDB, Jest, Redux, Git, AWS, Ant Design, Figma
       </p>
       <h4>Language skills</h4>
       <p>Russian: Native</p>
