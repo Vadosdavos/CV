@@ -17,7 +17,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: black;
   position: relative;
-  overflow: hidden;
 }
 
 #root {
@@ -59,7 +58,12 @@ a:hover {
 
 @media screen and (max-width: 1200px) {
   body {
-    overflow: visible;
+    background-image: url(/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  canvas {
+    display: none;
   }
   html {
     font-size: 14px;
