@@ -56,6 +56,19 @@ a:hover {
   color: white;
 }
 
+.swiper-pagination-bullet-active {
+  color: rgb(149, 178, 247);
+  font-weight: bolder;
+}
+
+.swiper-slide {
+  height: 0px;
+}
+
+.swiper-slide-active {
+  height: 100%;
+}
+
 @media screen and (max-width: 1200px) {
   body {
     background-image: url(/img/bg.jpg);
