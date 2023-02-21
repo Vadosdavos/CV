@@ -61,14 +61,6 @@ a:hover {
   font-weight: bolder;
 }
 
-.swiper-slide {
-  height: 0px;
-}
-
-.swiper-slide-active {
-  height: 100%;
-}
-
 @media screen and (max-width: 1200px) {
   body {
     background-image: url(/img/bg.jpg);

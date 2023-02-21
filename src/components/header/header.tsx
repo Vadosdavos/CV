@@ -1,3 +1,4 @@
+import { Contacts } from './contacts/contacts';
 import styles from './header.module.css';
 
 export const Header = () => (
@@ -21,6 +22,7 @@ export const Header = () => (
           kindness in people.
         </p>
         <p>Interested in science-tech, astronomy, game-dev and extreme spots.</p>
+        <Contacts />
       </div>
     </div>
     <div className={styles.profession}>

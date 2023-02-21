@@ -1,22 +1,17 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/control-has-associated-label */
-import styles from './footer.module.css';
-import sprite from '../../assets/icons/sprite.svg';
+import styles from './contacts.module.css';
+import sprite from '../../../assets/icons/sprite.svg';
 
-export const Footer = () => {
+export const Contacts = () => {
   const socials = [
     { text: 'github', link: 'https://github.com/Vadosdavos' },
     { text: 'linkedin', link: 'https://www.linkedin.com/in/vadim-bezymiannyi' },
     { text: 'telegram', link: 'https://t.me/inemidavos' },
     { text: 'instagram', link: 'https://www.instagram.com/vadosbezimeni' }] as const;
+
   return (
-    <section className={styles.footer}>
-      <div className={styles.copyright}>
-        ©2023
-        {' '}
-        <a href="mailto:bezbvap@gmail.com">bezbvap@gmail.com</a>
-      </div>
-      <div className={styles.divider} />
+    <section className={styles.contacts}>
       <div className={styles.socials}>
         {socials.map((el) => (
           <a
@@ -30,6 +25,7 @@ export const Footer = () => {
           </a>
         ))}
       </div>
+      <a className={styles.email} href="mailto:bezbvap@gmail.com">bezbvap@gmail.com</a>
     </section>
   );
 };

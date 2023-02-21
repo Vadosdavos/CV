@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Header } from '../header/header';
 import styles from './main.module.css';
 import 'swiper/css';
-import { Footer } from '../footer/footer';
 
 type DataValue = {
   img: string;
@@ -111,7 +110,6 @@ export const Main = () => {
             </div>
           </div>
         </section>
-        <Footer />
       </div>
     </main>
 

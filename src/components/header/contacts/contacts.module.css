@@ -1,25 +1,18 @@
-.footer {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: var(--radius);
-  padding: 20px;
+.contacts {
+  padding: 20px 0;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-}
-
-.copyright {
-  font-size: 0.95rem;
-}
-
-.divider {
-  height: 0.5px;
-  width: 50%;
-  background-color: #CACACA;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .socials {
   display: flex;
-  gap: 20px;
+  gap: 10px;
+}
+
+.email {
+  font-size: 16px;
 }
 
 .socialLink {
@@ -40,30 +33,14 @@
   fill: white;
 }
 
-
-@media screen and (max-width: 1200px) {
-  .footer {
-    gap: 10px;
-  }
-
-  .copyright {
-    flex-shrink: 0;
-  }
-}
-
 @media screen and (max-width: 550px) {
-  .socials {
-    gap: 10px;
-  }
-
   .socialLink {
     width: 20px;
     height: 20px;
   }
 }
-
 @media screen and (max-width: 375px) {
-  .divider {
-    display: none;
+  .email {
+    font-size: 14px;
   }
 }
