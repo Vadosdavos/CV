@@ -1,5 +1,12 @@
 import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import scapesmania from '../../assets/works/scapesmania.webp';
+import chimeras from '../../assets/works/chimeras.webp';
+import skate from '../../assets/works/skate.webp';
+import asyncRace from '../../assets/works/async-race.webp';
+import tree from '../../assets/works/tree.webp';
+import artQuiz from '../../assets/works/art-quiz.webp';
+import filter from '../../assets/works/filter.webp';
 import { Header } from '../header/header';
 import styles from './main.module.css';
 import 'swiper/css';
@@ -7,6 +14,7 @@ import 'swiper/css';
 type DataValue = {
   img: string;
   description: string;
+  technologies: string;
   link: string;
 };
 
@@ -14,40 +22,47 @@ type Data = Record<string, DataValue>;
 
 export const Main = () => {
   const data: Data = {
-    'Chimeras Metaverse game.  Marketplace': {
-      img: 'img/works/chimeras.jpg',
-      description: 'I took part in marketplace and user profile features development. Sortable and filterable marketplace allows users to buy some game assets. User can control login methods and dispose of game assets. Used technologies: NextJS, TypeScript, CSS-in-JS (Emotion), ESLint, JSON Schema, Metamask',
+    'ScapesMania - gaming ecosystem': {
+      img: scapesmania,
+      description: '(Commercial project) This project provides information about the ecosystem and allows users to purchase project tokens, as well as manage their finances through a personal account. I developed various projects features such as main landing page, buy page and personal account.',
+      technologies: 'Used technologies: NextJS, TypeScript, CSS-in-JS (Emotion), ESLint, i18next, Ethereum, Wagmi',
+      link: 'https://scapesmania.io/',
+    },
+    'Chimeras Metaverse game': {
+      img: chimeras,
+      description: '(Commercial project) I took part in marketplace, user profile and admin panel features development. Sortable and filterable marketplace allows users to buy some game assets. User can control login methods and dispose of game assets.',
+      technologies: 'Used technologies: NextJS, TypeScript, CSS-in-JS (Emotion), ESLint, JSON Schema, Ethereum, Metamask',
       link: 'https://marketplace.chimeras.io/',
     },
     'Skateboard 3d configurator': {
-      img: 'img/works/skate.jpg',
-      description: `In this small app I've made my first steps in learning Three.JS library.
-      You can configure skateboard and view it in 3D.
-      Used technologies: ReactJS, TypeScript, Redux, Three.JS`,
+      img: skate,
+      description: `(Pet project) In this small app I've made my first steps in learning Three.JS library.
+      You can configure skateboard and view it in 3D.`,
+      technologies: 'Used technologies: ReactJS, TypeScript, Redux, Three.JS',
       link: 'https://vadosdavos.github.io/Skateboard-3d-configurator/',
     },
     'Async race': {
-      img: 'img/works/async-race.jpg',
-      description: `This SPA can manage the collection of the cars, operate its engines, and show races statistics.
-      Used technologies: ReactJS, TypeScript, CSS`,
+      img: asyncRace,
+      description: '(Pet project) This SPA can manage the collection of the cars, operate its engines, and show races statistics.',
+      technologies: 'Used technologies: ReactJS, TypeScript, CSS',
       link: 'https://vadadosdavos-async-race.netlify.app/',
     },
     'Christmas tree decorating game': {
-      img: 'img/works/tree.jpg',
-      description: `his is a litle game there you need to choose some toys and put them on the Christmas tree.
-      Used technologies: HTML, SASS, TypeScript`,
+      img: tree,
+      description: '(Pet project) This is a litle game there you need to choose some toys and put them on the Christmas tree.',
+      technologies: 'Used technologies: HTML, SASS, TypeScript',
       link: 'https://vadosdavos.github.io/my-works/christmas-task/',
     },
     'Art Quiz': {
-      img: 'img/works/art-quiz.jpg',
-      description: `Application-quiz on the knowledge of the masterpieces of painting and their authors.
-      Used technologies: HTML, SASS, TypeScript`,
+      img: artQuiz,
+      description: '(Pet project) Application-quiz on the knowledge of the masterpieces of painting and their authors.',
+      technologies: 'Used technologies: HTML, SASS, TypeScript',
       link: 'https://vadosdavos.github.io/my-works/art-quiz/',
     },
     'Photo filter': {
-      img: 'img/works/filter.jpg',
-      description: `The application is a photo editor that allows you to edit an image by applying various properties and filters to them.
-      Used technologies: HTML, CSS, JavaScript`,
+      img: filter,
+      description: '(Pet project) The application is a photo editor that allows you to edit an image by applying various properties and filters to them.',
+      technologies: 'Used technologies: HTML, CSS, JavaScript',
       link: 'https://vadosdavos.github.io/photo-filter/',
     },
   };
@@ -69,7 +84,7 @@ export const Main = () => {
               }}
               modules={[Pagination]}
             >
-              {workTitiles.map((el) => (
+              {workTitiles.map((el, index) => (
                 <SwiperSlide key={data[el].img}>
                   <figure className={styles.work}>
                     <a href={data[el].link} target="_blank" rel="noreferrer">
@@ -77,10 +92,12 @@ export const Main = () => {
                         className={styles.workImage}
                         src={data[el].img}
                         alt={el}
+                        loading={index > 0 ? 'lazy' : 'eager'}
                       />
                     </a>
                     <figcaption className={styles.workDescription}>
                       {data[el].description}
+                      <p className={styles.workTechnologies}>{data[el].technologies}</p>
                     </figcaption>
                   </figure>
                 </SwiperSlide>

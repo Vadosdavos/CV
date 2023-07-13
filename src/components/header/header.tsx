@@ -6,16 +6,16 @@ export const Header = () => (
     <div className={styles.info}>
       <div className={styles.avatar}>
         <div className={styles.avatarFrame}>
-          <img src="img/avatar-frame.png" alt="avatar frame" />
+          <img width={220} height={220} src="img/avatar-frame.png" alt="avatar frame" />
         </div>
         <div className={styles.avatarContainer}>
-          <img src="img/avatar.jpg" alt="avatar" />
+          <img width={190} height={190} src="img/avatar.webp" alt="avatar" />
         </div>
       </div>
       <div className={styles.name}>
         <h2>Vadim Bezymyannyi</h2>
         <p>
-          29 years old. Have C&I Engineer degree. 1 year of commercial experience.
+          29 years old. Have C&I Engineer degree. 1.5 year of commercial experience.
         </p>
         <p>
           Calm person with good communication skills, team player. Appreciate honesty and
@@ -30,7 +30,8 @@ export const Header = () => (
       <h4>Tech Stack</h4>
       <p className={styles.skills}>
         HTML, CSS, JavaScript/TypeScript, React.js, Next.js,
-        CSS-in-JS (Emotion), MongoDB, Jest, Redux, Git, AWS, Ant Design, Figma
+        CSS-in-JS (Emotion), Ethereum (Wagmi), MongoDB, i18nex,
+        Jest, Redux, Git, AWS, Ant Design, Figma
       </p>
       <h4>Language skills</h4>
       <p>Russian: Native</p>

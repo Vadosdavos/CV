@@ -63,7 +63,7 @@ a:hover {
 
 @media screen and (max-width: 1200px) {
   body {
-    background-image: url(/img/bg.jpg);
+    background-image: url(/img/bg.webp);
     background-repeat: no-repeat;
     background-attachment: fixed;
   }

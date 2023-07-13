@@ -51,13 +51,10 @@
 
 .skills {
   line-height: 20px;
+  font-size: smaller;
 }
 
 @media screen and (max-width: 1200px) {
-  .avatar {
-    display: none;
-  }
-
   .info {
     width: 50%;
     min-width: 50%;
@@ -72,15 +69,37 @@
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .avatar {
+    width: 150px;
+    height: 150px;
+    float: left;
+  }
+
+  .info {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .header {
     flex-direction: column;
     gap: 10px;
   }
 
+  .avatar {
+    display: block;
+    align-self: center;
+  }
+
   .info {
+    flex-direction: column;
     width: 100%;
     min-width: unset;
+  }
+
+  .name h2 {
+    text-align: center;
   }
 
   .profession {
