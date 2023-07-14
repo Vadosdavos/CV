@@ -92,6 +92,11 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .mainContainer {
+    background-color: unset;
+    backdrop-filter: unset;
+  }
+
   .worksContainer {
     flex-wrap: wrap-reverse;
   }
