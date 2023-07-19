@@ -31,7 +31,7 @@ export const Header = () => (
       <p className={styles.skills}>
         HTML, CSS, JavaScript/TypeScript, CSS-in-JS (Emotion), Git
         <br />
-        React.js, Next.js, Redux, Ethereum (Wagmi), i18next
+        React.js, Next.js, Redux, Ethereum (Wagmi), i18next, OpenAPI (Swagger)
         <br />
         MongoDB, Jest, React Testing Library, AWS, Ant Design, Figma
       </p>
