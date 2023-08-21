@@ -29,7 +29,7 @@ export const Header = () => (
       <h2>Frontend developer</h2>
       <h4>Tech Stack</h4>
       <p className={styles.skills}>
-        HTML, CSS, JavaScript/TypeScript, CSS-in-JS (Emotion), Git
+        HTML, CSS, JavaScript/TypeScript, CSS-in-JS (Emotion), TailwindCss, Git
         <br />
         React.js, Next.js, Redux, Ethereum (Wagmi), i18next, OpenAPI (Swagger)
         <br />
