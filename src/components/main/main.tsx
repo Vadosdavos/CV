@@ -7,6 +7,7 @@ import asyncRace from '../../assets/works/async-race.webp';
 import tree from '../../assets/works/tree.webp';
 import artQuiz from '../../assets/works/art-quiz.webp';
 import filter from '../../assets/works/filter.webp';
+import serverEditor from '../../assets/works/server-editor.webp';
 import { Header } from '../header/header';
 import styles from './main.module.css';
 import 'swiper/css';
@@ -27,6 +28,12 @@ export const Main = () => {
       description: '(Commercial project) This project provides information about the ecosystem and allows users to purchase project tokens, as well as manage their finances through a personal account. I developed various projects features such as main landing page, buy page and personal account.',
       technologies: 'Used technologies: NextJS, TypeScript, CSS-in-JS (Emotion), ESLint, i18next, Ethereum, Wagmi',
       link: 'https://scapesmania.io/',
+    },
+    'Server config editor': {
+      img: serverEditor,
+      description: '(Commercial project) Small service (UI + API) for creating and editing server configs',
+      technologies: 'Used technologies: NextJS, TypeScript, Ant.Design, NextAuth.js, MongoDB',
+      link: 'https://github.com/Vadosdavos/server-config-editor',
     },
     'Chimeras Metaverse game': {
       img: chimeras,
