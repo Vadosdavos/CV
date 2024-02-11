@@ -118,18 +118,25 @@ export const Main = () => {
             </div>
             <div>
               <h3>Work experience</h3>
-              <p>Aug 2022 - Present</p>
+              <p>Sep 2023 - Present</p>
               <p>
-                <a href="https://redpilldev.tech/" target="_blank" rel="noreferrer">RedPillStudio.</a>
+                <a href="https://fuse8.ru/" target="_blank" rel="noreferrer">fuse8</a>
                 {' '}
-                Frontend developer
+                - Frontend developer
+              </p>
+              <br />
+              <p>Aug 2022 - Sep 2023</p>
+              <p>
+                <a href="https://redpilldev.tech/" target="_blank" rel="noreferrer">RedPillStudio</a>
+                {' '}
+                - Frontend developer
               </p>
               <br />
               <p>Feb 2022 - Jun 2022</p>
               <p>
-                <a href="https://www.epam.com/" target="_blank" rel="noreferrer">EPAM Systems.</a>
+                <a href="https://www.epam.com/" target="_blank" rel="noreferrer">EPAM Systems</a>
                 {' '}
-                Junior Software Engineer
+                - Junior Software Engineer
               </p>
             </div>
           </div>

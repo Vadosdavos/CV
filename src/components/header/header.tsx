@@ -15,7 +15,7 @@ export const Header = () => (
       <div className={styles.name}>
         <h2>Vadim Bezymyannyi</h2>
         <p>
-          29 years old. Have C&I Engineer degree. 1.5 years of commercial experience.
+          30 years old. Have C&I Engineer degree. 2+ years of commercial experience.
         </p>
         <p>
           Calm person with good communication skills, team player. Appreciate honesty and
@@ -29,9 +29,9 @@ export const Header = () => (
       <h2>Frontend developer</h2>
       <h4>Tech Stack</h4>
       <p className={styles.skills}>
-        HTML, CSS, JavaScript/TypeScript, CSS-in-JS (Emotion), TailwindCss, Git
+        HTML, CSS, JavaScript/TypeScript, SCSS, CSS-in-JS, TailwindCss, Git
         <br />
-        React.js, Next.js, Redux, Ethereum (Wagmi), i18next, OpenAPI (Swagger)
+        React.js, Next.js, Redux, Ethereum (Wagmi), i18next
         <br />
         MongoDB, Jest, React Testing Library, AWS, Ant Design, Figma
       </p>
